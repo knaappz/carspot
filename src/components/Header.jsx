@@ -7,17 +7,17 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Hook do zamknięcia menu przy zmianie rozmiaru okna
+  // Hook do zamknięcia menu
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {  // Jeśli szerokość okna przekracza 768px (media query dla "md")
-        setIsMenuOpen(false);          // Zamyka menu
+      if (window.innerWidth >= 768) { 
+        setIsMenuOpen(false);          
       }
     };
 
     window.addEventListener('resize', handleResize);
 
-    // Sprzątanie po odmontowaniu komponentu
+    // Wyłączenie menu w razie zmiany rozmiaru okna
     return () => {
       window.removeEventListener('resize', handleResize);
     };
