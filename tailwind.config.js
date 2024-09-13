@@ -22,7 +22,9 @@ export default {
         'display': ['Oswald'],
         'body': ['"Open Sans"'],
         babas: ['Babas Neue', 'sans-serif'],
+        roboto: ['Roboto Condensed', 'sans-serif'],
       },
+      
     },
   },
   plugins: [],

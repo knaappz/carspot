@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Galery = () => {
   return (
-    <section id='galery' className='h-screen pl-24 pt-32'>
+    <section id='galery' className='h-screen sm:pl-24 pl-5 pt-32'>
 
       <section className='flex flex-col gap-8'>
 
@@ -11,7 +11,7 @@ export const Galery = () => {
           <h1 className='uppercase font-babas text-5xl text-heading-txt'>zobacz naszą galerię zdjęć</h1>
         </div>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 flex-wrap">
           <p className='text-button-bg underline'>Samochody osobowe</p>
           <p>Samochody dostawcze</p>
         </div>
